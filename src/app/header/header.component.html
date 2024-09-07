@@ -1,1 +1,16 @@
-<p>header works!</p>
+<div class="b-flex-row">
+  <div class="titulo-site d-flex align-items-center">
+    <img src="assets/LogoHorizontal.svg">
+  </div>
+  <div class="titulo-site d-flex align-items-center col-sm justify-content-end">
+    <a (click)="this.menulogin = !this.menulogin">
+      <img class="icone-usuario" src="assets/CorujinhaUser.svg">
+    </a>
+  </div>
+  <div *ngIf="this.menulogin" class="list-group menu-usuario">
+    <li class="list-group-item disabled">MENU</li>
+    <a href="#" class="list-group-item list-group-action item-clicavel">Login</a>
+    <a href="#" class="list-group-item list-group-action item-clicavel">Cadastre-se</a>
+  </div>
+</div>
+
