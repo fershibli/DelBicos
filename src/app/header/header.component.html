@@ -1,16 +1,21 @@
-<div class="b-flex-row">
+<div class="d-flex flex-row align-items-center justify-content-between w-100 p-4">
   <div class="titulo-site d-flex align-items-center">
-    <img src="assets/LogoHorizontal.svg">
+    <img class="logo-delbicos" src="assets/LogoHorizontal.png">
   </div>
-  <div class="titulo-site d-flex align-items-center col-sm justify-content-end">
-    <a (click)="this.menulogin = !this.menulogin">
-      <img class="icone-usuario" src="assets/CorujinhaUser.svg">
-    </a>
+  <div class="d-flex flex-column align-items-center">
+    <div class="titulo-site d-flex align-items-center col-sm justify-content-end">
+      <a (click)="toggleMenu()">
+        <img class="icone-usuario" src="assets/CorujinhaUser.svg">
+      </a>
+    </div>
+    <span class="login-text logged-in" *ngIf="isLoggedIn; else loggedOut">Olá, {{ userName }}!</span>
+    <ng-template #loggedOut>
+      <span class="login-text text-secondary">Deslogado</span>
+    </ng-template>
   </div>
-  <div *ngIf="this.menulogin" class="list-group menu-usuario">
+  <div *ngIf="this.menuusuario" class="list-group menu-usuario">
     <li class="list-group-item disabled">MENU</li>
     <a href="#" class="list-group-item list-group-action item-clicavel">Login</a>
     <a href="#" class="list-group-item list-group-action item-clicavel">Cadastre-se</a>
   </div>
 </div>
-

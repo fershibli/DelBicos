@@ -2,13 +2,25 @@
   font-size: 40px;
   font-weight: bold;
   height: 112px;
-  border-bottom: 1px dashed #d0d0d0;
-  padding: 32px;
+}
+
+.logo-delbicos {
+  height: 100px;
 }
 
 .icone-usuario {
   width: 50px;
   height: 50px;
+}
+
+.login-text {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.logged-in {
+  color: var(--delbicos-orange);
+  /* text-shadow: 1px 1px 1px var(--delbicos-black); */
 }
 
 .menu-usuario {
