@@ -13,6 +13,7 @@ export class CarouselComponent {
     {
       title: 'Serviços Domésticos',
       image: 'ServicosDomesticos.jpg',
+      bottom: '300px',
     },
     {
       title: 'Reforma & Reparos',
@@ -21,14 +22,17 @@ export class CarouselComponent {
     {
       title: 'Serviços para Pets',
       image: 'ServicosPets.jpg',
+      bottom: '550px',
     },
     {
       title: 'Bem-estar & Qualidade de Vida',
       image: 'BemEstarQualidadeVida.jpg',
+      bottom: '290px',
     },
     {
       title: 'Beleza & Cosmética',
       image: 'BelezaCosmetica.jpg',
+      bottom: '300px',
     },
   ];
 }

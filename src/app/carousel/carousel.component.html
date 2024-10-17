@@ -2,7 +2,9 @@
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div *ngFor="let item of items; let i = index" [class.active]="i === 0" class="carousel-item">
-        <img [src]="'assets/' + item.image" class="d-block w-100" [alt]="item.title">
+        <div class="carousel-image-container position-relative">
+          <img [src]="'assets/' + item.image" class="d-block w-100 carousel-image position-absolute" [alt]="item.title" [style.top]="item.top !== undefined ? '-'+item.top : 'auto'" [style.bottom]="'-'+item.bottom">
+        </div>
         <div class="carousel-caption">
           <h3>{{ item.title }}</h3>
         </div>

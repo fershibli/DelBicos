@@ -17,9 +17,18 @@
 }
 
 .carousel-item img {
-  min-width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+}
+
+.carousel-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
 }
 
 .carousel-item .overlay {
