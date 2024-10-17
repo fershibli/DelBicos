@@ -3,7 +3,7 @@
     <div class="carousel-inner">
       <div *ngFor="let item of items; let i = index" [class.active]="i === 0" class="carousel-item">
         <div class="carousel-image-container position-relative">
-          <img [src]="'assets/' + item.image" class="d-block w-100 carousel-image position-absolute" [alt]="item.title" [style.top]="item.top !== undefined ? '-'+item.top : 'auto'" [style.bottom]="'-'+item.bottom">
+          <img [src]="'assets/' + item.image" class="d-block w-100 carousel-image position-absolute" [alt]="item.title" [style.top]="item.top !== undefined ? '-'+item.top : 'auto'" [style.bottom]="item.bottom !== undefined ? '-'+item.bottom : 'auto'">
         </div>
         <div class="carousel-caption">
           <h3>{{ item.title }}</h3>
