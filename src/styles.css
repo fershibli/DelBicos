@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --delbicos-orange: #ff8811ff;
+  --delbicos-blue: #005a93ff;
+  --delbicos-black: #000000ff;
+  --delbicos-white: #ffffffff;
+}
