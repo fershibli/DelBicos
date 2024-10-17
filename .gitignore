@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+_material/Diagrama de caso de uso.png
+_material/Requisitos_Funcionais_Caso_de_Uso_Atualizado.xlsx
+_material/Requisitos_Funcionais_Caso_de_Uso.xlsx
