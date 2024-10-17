@@ -15,7 +15,9 @@
   </div>
   <div *ngIf="this.menuusuario" class="list-group menu-usuario">
     <li class="list-group-item disabled">MENU</li>
-    <a href="#" class="list-group-item list-group-action item-clicavel">Login</a>
+    <a href="#" class="list-group-item list-group-action item-clicavel" (click)="isLoggedIn ? mockLogout() : mockLogin()">
+      {{ isLoggedIn ? 'Logout' : 'Login' }}
+    </a>
     <a href="#" class="list-group-item list-group-action item-clicavel">Cadastre-se</a>
   </div>
 </div>

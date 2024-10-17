@@ -12,7 +12,7 @@ export class HeaderComponent {
   titulosite = 'Extensões Fatec';
   menuusuario = false;
   isLoggedIn = false;
-  userName = 'José';
+  userName = 'nome do usuário';
   isBrowser: boolean;
 
   constructor() {
@@ -49,5 +49,16 @@ export class HeaderComponent {
     ) {
       this.menuusuario = false;
     }
+  }
+
+  mockLogin() {
+    this.isLoggedIn = true;
+    this.userName = 'José';
+    this.menuusuario = false;
+  }
+  mockLogout() {
+    this.isLoggedIn = false;
+    this.userName = '';
+    this.menuusuario = false;
   }
 }
