@@ -31,6 +31,14 @@
   z-index: 1;
 }
 
+.menu-usuario li {
+  color: var(--delbicos-blue);
+}
+
+.menu-usuario a {
+  color: var(--delbicos-orange);
+}
+
 .item-clicavel {
   font-weight: bold;
 }
