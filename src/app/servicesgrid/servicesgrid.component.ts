@@ -14,8 +14,8 @@ export class ServicesgridComponent {
   itensVitrine = Array.from({ length: 30 }, (_, i) => {
     const randomPos = Math.floor(Math.random() * listaImagens.length);
     return {
-      imagem: listaImagens[randomPos],
-      titulo: `Profissional #${i + 1}`,
+      image: listaImagens[randomPos],
+      title: `Profissional #${i + 1}`,
     };
   });
 }
