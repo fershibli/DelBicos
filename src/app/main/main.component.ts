@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { CarouselComponent } from '../carousel/carousel.component';
-// import { ServicesgridComponent } from '../servicesgrid/servicesgrid.component';
+import { ServicesgridComponent } from '../servicesgrid/servicesgrid.component';
 
 @Component({
   selector: 'app-main',
@@ -11,7 +11,7 @@ import { CarouselComponent } from '../carousel/carousel.component';
     HeaderComponent,
     NavbarComponent,
     CarouselComponent,
-    // ServicesgridComponent,
+    ServicesgridComponent,
   ],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],

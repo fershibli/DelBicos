@@ -1,15 +1,21 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
+const listaImagens = ['BelezaCosmetica.jpg', 'BemEstarQualidadeVida.jpg', 'ReformasReparos.jpg', 'ServicosDomesticos.jpg', 'ServicosPets.jpg']
 
 @Component({
   selector: 'app-servicesgrid',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './servicesgrid.component.html',
   styleUrl: './servicesgrid.component.css',
 })
 export class ServicesgridComponent {
-  itensVitrine = Array.from({ length: 30 }, (_, i) => ({
-    imagem: `https://via.placeholder.com/150?text=Image+${i + 1}`,
-    titulo: `Item ${i + 1}`,
-  }));
+  itensVitrine = Array.from({ length: 30 }, (_, i) => {
+    const randomPos = Math.floor(Math.random() * listaImagens.length);
+    return {
+      imagem: listaImagens[randomPos],
+      titulo: `Profissional #${i + 1}`,
+    };
+  });
 }
