@@ -1,20 +1,20 @@
 .navbar {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #e7e7e7;
+  background-color: var(--delbicos-blue);
+  border-bottom: 1px solid gray;
 }
 
 
 .navbar-nav .nav-item .nav-link {
-  color: var(--delbicos-orange);
+  color: var(--delbicos-white);
   padding: 0.5rem 1rem;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: var(--delbicos-blue);
+  color: var(--delbicos-orange);
 }
 
 .navbar-nav .nav-item .nav-link.active {
-  color: var(--delbicos-blue);
+  color: var(--delbicos-orange);
   font-weight: bold;
 }
 
