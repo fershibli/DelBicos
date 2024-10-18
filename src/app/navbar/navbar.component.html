@@ -3,7 +3,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse flex-row justify-content-between" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -21,6 +21,12 @@
           <a class="nav-link" href="#">Ajuda</a>
         </li>
       </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+        <button class="btn" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
     </div>
   </div>
 </nav>
