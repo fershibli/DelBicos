@@ -17,16 +17,16 @@ export class ServicesgridComponent {
 
   openModal(item: number) {
     try {
-    console.log('openModal chamado com índice:', item);
-    this.selectedItem = item;
-    const modalElement = document.getElementById('itemModal');
-    if (modalElement) {
-      const modal = new bootstrap.Modal(modalElement);
-      modal.show();
+      console.log('openModal chamado com índice:', item);
+      this.selectedItem = item;
+      const modalElement = document.getElementById('itemModal');
+      if (modalElement) {
+        const modal = new bootstrap.Modal(modalElement);
+        modal.show();
+      }
+    } catch (error) {
+      console.error('Erro ao abrir modal:', error);
     }
-  } catch (error) {
-    console.error('Erro ao abrir modal:', error);
-  }
   }
 
   itensVitrine = Array.from({ length: 30 }, (_, i) => {
