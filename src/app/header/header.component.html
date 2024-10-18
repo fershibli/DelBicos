@@ -18,6 +18,6 @@
     <a href="#" class="list-group-item list-group-action item-clicavel" (click)="isLoggedIn ? mockLogout() : mockLogin()">
       {{ isLoggedIn ? 'Logout' : 'Login' }}
     </a>
-    <a href="#" class="list-group-item list-group-action item-clicavel">Cadastre-se</a>
+    <a href="#" class="list-group-item list-group-action item-clicavel">{{isLoggedIn ? 'Alternar para perfil Profissional' : 'Cadastre-se'}}</a>
   </div>
 </div>
