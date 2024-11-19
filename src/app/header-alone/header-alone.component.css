@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+  
+  .logo-delbicos {
+    height: 100px;
+    margin-bottom: 14px;
+  }
+
+  .responsive-div {
+    background-color: #FFFFFF;  
+    max-height: 185px; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background-color: var(--delbicos-blue); 
+  }
+  
+  .responsive-div p {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 12px
+    ;
+  }
+  
+  
+  
