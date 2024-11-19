@@ -1,0 +1,170 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .container-2 {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+
+
+  .lado-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    margin-right: 30px;
+  }
+  
+  .opcoes {
+    display: flex;
+    gap: 1rem;  
+    justify-content: center; 
+}
+
+
+button {
+    flex: 1;  
+    padding: 1rem;  
+    font-size: 1rem; 
+    border: 1px solid #ccc;  
+    background-color: white;  
+    color: black;  
+    cursor: pointer; 
+    transition: all 0.3s ease;  
+}
+
+
+button.selected {
+    background-color: #FC8200;  
+    color: white;  
+}
+
+
+button:hover {
+    background-color: #f0f0f0;  
+    border-color: #aaa; 
+}
+
+
+button:focus {
+    outline: none;
+}
+
+.lado-esquerdo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .campo label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .campo input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .termos {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .botao button {
+    background-color: #FC8200;
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .botao button:hover {
+    background-color: #f57c00;
+  }
+  
+  @media (max-width: 768px) {
+    .container-2 {
+      flex-direction: column;
+    }
+  
+    .lado-direito, .lado-esquerdo {
+      width: 100%;
+    }
+  }
+  .termos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  
+  .termos input[type="checkbox"] {
+    margin-right: 0.5rem; 
+    transform: scale(1.2);
+  }
+  
+
+  .termos label {
+    color: black;
+  }
+  
+
+  .termos input[type="checkbox"]:checked + span {
+    color: #FC8200; 
+  }
+  
+
+  .termos span {
+    cursor: pointer;
+  }
+.termos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.chamada-login {
+padding-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.chamada-login span {
+  font-size: 14px;
+  color: #005A93;
+  cursor: pointer;
+}
+
+.chamada-login span:hover {
+  text-decoration: underline;
+}

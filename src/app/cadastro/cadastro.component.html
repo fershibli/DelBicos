@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="tudo">
+        <div class="opcoes">
+            <div class="option-1">
+                <button [ngClass]="{selected: selectedOption === 'agendar'}" (click)="selectOption('agendar')">
+                    Gostaria de agendar serviços
+                </button>
+            </div>
+            <div class="option-2">
+                <button [ngClass]="{selected: selectedOption === 'prestar'}" (click)="selectOption('prestar')">
+                    Gostaria de prestar serviços
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="lado-direito">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome">
+                </div>
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input id="sobrenome" type="text" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="campo">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" type="text" placeholder="Digite seu CPF">
+                </div>
+                <div class="campo">
+                    <label for="genero">Gênero</label>
+                    <input id="genero" type="text" placeholder="Digite seu gênero">
+                </div>
+                <div class="campo">
+                    <label for="data-nasc">Data de Nascimento</label>
+                    <input id="data-nasc" type="date">
+                </div>
+            </div>
+                
+            <div class="lado-esquerdo">
+                <div class="campo">
+                    <label for="celular">Celular</label>
+                    <input id="celular" type="text" placeholder="Digite seu celular">
+                </div>
+                <div class="campo">
+                    <label for="localizacao">Localização</label>
+                    <input id="localizacao" type="text" placeholder="Digite seu CEP">
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Digite seu email">
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" placeholder="Digite sua senha">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="termos">
+        <label>
+          <input type="checkbox"> 
+          Aceito os termos de uso, política e privacidade
+        </label>
+      </div>
+    
+    <div class="botao">
+        <button>Cadastrar</button>
+    </div>
+</div>
+<div class="chamada-login">
+    <span>Já tem cadastro? Faça seu login agora!</span>
+</div>
+
+
+
