@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    margin-bottom: 0px;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.email, .senha, .captcha {
+    margin-bottom: 15px;
+}
+
+.email label, .senha label, .captcha label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.email input, .senha input, .captcha input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn-entrar button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #F28E24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-entrar button:hover {
+    background-color: #f07c00;
+}
+
+.chamada-esqueci-senha, .chamada-cadastro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chamada-esqueci-senha span, .chamada-cadastro span {
+    font-size: 14px;
+    color: #005A93;
+    cursor: pointer;
+}
+
+.chamada-esqueci-senha span:hover, .chamada-cadastro span:hover {
+    text-decoration: underline;
+}
