@@ -1,0 +1,150 @@
+/* Reset básico para garantir um layout limpo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container2 {
+  background-color: #005A93;
+  width: 100% !important;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.texto{
+  padding-bottom: 20px;
+  padding-top: 0px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.up,
+.down {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category-btn {
+  background-color: #0076b9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 24px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+.category-btn:hover {
+  background-color: #005a8c;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 600px) {
+  .itens {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .up,
+  .down {
+      justify-content: center;
+      gap: 15px;
+  }
+  .category-btn {
+      width: auto;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.up,
+.down {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.category-btn {
+  background-color: #0076b9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+
+.category-btn:hover {
+  background-color: #005a8c;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 600px) {
+  .itens {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .up,
+  .down {
+      justify-content: center;
+      gap: 15px;
+  }
+  .category-btn {
+      width: auto;
+  }
+}
