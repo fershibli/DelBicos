@@ -1,0 +1,60 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #fc8200;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .titulo {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .subtitulo {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
