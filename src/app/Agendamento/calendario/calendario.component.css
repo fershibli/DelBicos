@@ -1,0 +1,66 @@
+/* Container do calendário */
+.calendario-container {
+  background-color: #fc8200;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho do calendário */
+.calendario-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mes-ano {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0 20px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo dos dias da semana */
+.dias-da-semana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo dos dias */
+.dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.dia {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dia:hover {
+  background-color: #ddd;
+}
+
+.dia-selecionado {
+  background-color: #005a93;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,24 @@
+<div class="calendario-container">
+  <div class="calendario-header">
+    <button class="nav-button" (click)="mudarMes(-1)">&#8592;</button>
+    <div class="mes-ano">
+      <span>{{ mesAtualNome }} {{ anoAtual }}</span> 
+    </div>
+    <button class="nav-button" (click)="mudarMes(1)">&#8594;</button>
+  </div>
+
+  <div class="dias-da-semana">
+    <div *ngFor="let dia of ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']" class="dia-da-semana">
+      {{ dia }}
+    </div>
+  </div>
+
+  <div class="dias">
+    <div *ngFor="let dia of diasDoMes" 
+         class="dia"
+         [ngClass]="{'dia-selecionado': dia.dia === diaSelecionado}"
+         (click)="selecionarDia(dia)">
+      {{ dia.dia }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="opcoes">
+      <button 
+        *ngFor="let especialidade of especialidades" 
+        [ngClass]="{'selected': especialidade.selected}" 
+        (click)="selecionarEspecialidade(especialidade)" 
+        [style.background-color]="especialidade.selected ? '#005A93' : '#FC8200'" 
+        [style.color]="especialidade.selected ? 'white' : 'white'">
+        {{ especialidade.nome }}
+      </button>
+    </div>
+  </div>
+  
