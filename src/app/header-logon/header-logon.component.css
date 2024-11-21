@@ -1,26 +1,37 @@
+
 .container {
     font-family: Arial, sans-serif;
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    height: 100px; 
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    margin-bottom: 40px;
 }
+
 
 .cima {
     display: flex;
     justify-content: flex-start;
+    align-items: center; 
     margin-bottom: 10px;
+    padding: 10px 0;
 }
 
 .logo-delbicos {
-    max-width: 200px;
+    max-width: 200px; 
     height: auto;
-    padding-top: 10px;
 }
+
 
 .baixo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px ;
+
+    width: 100%; 
     border-top: 2px solid black;
 }
 
@@ -28,6 +39,7 @@
 .esquerda {
     display: flex;
     gap: 15px;
+    align-items: center; 
 }
 
 .item button {
@@ -54,12 +66,13 @@
     font-size: 14px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
-}   
+}
 
 .item-especial button:hover {
     background: #e67300;
     transform: scale(1.05);
 }
+
 
 .dropdown {
     position: relative;
@@ -105,19 +118,4 @@
 
 .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-.item-endereco {
-    display: flex;
-    align-items: center;
-    padding: 5px 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-}
-
-.endereco-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
