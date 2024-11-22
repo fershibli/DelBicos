@@ -1,1 +1,27 @@
-<p>box-filtros works!</p>
+<div class="container">
+    <div class="box">
+      <h1>Pesquisar</h1>
+  
+      <div class="item">
+        <p>Categoria</p>
+        <select [(ngModel)]="selectedCategoria" (change)="onCategoriaChange()">
+          <option *ngFor="let categoria of categorias" [value]="categoria">{{ categoria }}</option>
+        </select>
+      </div>
+  
+      <div class="item">
+        <p>Profissional</p>
+        <select [(ngModel)]="selectedProfissional" [disabled]="!profissionais.length">
+          <option *ngFor="let profissional of profissionais" [value]="profissional">{{ profissional }}</option>
+        </select>
+      </div>
+  
+      <div class="item">
+        <p>Data desejada</p>
+        <input type="date" [(ngModel)]="selectedDate">
+      </div>
+  
+      <button (click)="pesquisar()">Pesquisar</button>
+    </div>
+  </div>
+  
