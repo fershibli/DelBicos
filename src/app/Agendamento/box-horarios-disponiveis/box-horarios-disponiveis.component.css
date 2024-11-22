@@ -1,0 +1,74 @@
+.box {
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 190px;
+    margin-left: -30px;
+    background-color: #FC8200;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+  }
+
+  p {
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: white;
+    margin-top: -10px;
+  }
+  
+  .horarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .horario-btn {
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #005A93;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .horario-btn:hover {
+    background-color: #6c8aa9;
+  }
+  
+  .horario-btn:disabled {
+    background-color: #f28484;
+    cursor: not-allowed;
+  }
+  
+  .pesquisar-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pesquisar-btn:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,12 @@
+<div class="box">
+    <h3>Horários Disponíveis</h3>
+    <p> para: {{ cliente.data }}</p>
+    <div class="horarios">
+      <button 
+        *ngFor="let horario of horarios" 
+        class="horario-btn" 
+        [disabled]="!horario.disponivel"
+        (click)="selecionarHorario(horario.hora)">
+        {{ horario.hora }}
+      </button>
+  
