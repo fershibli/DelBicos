@@ -1,0 +1,48 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.esquerda {
+  flex: 0 0 60%;
+}
+
+.direita {
+  flex: 0 0 35%;
+}
+
+.sobre, .comodidades, .atendimento {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.info, .map {
+  margin-bottom: 20px;
+}
+
+.info h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: #555;
+}
