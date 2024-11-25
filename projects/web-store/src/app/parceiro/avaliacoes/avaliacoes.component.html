@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="avaliacoes">
+    <div *ngFor="let avaliacao of avaliacoes" class="avaliacao-item">
+      <div class="avaliacao-header">
+        <img [src]="avaliacao.foto" alt="Foto do avaliador" class="foto-avaliador" />
+        <div class="info">
+          <h3>{{ avaliacao.nome }}</h3>
+          <p class="data">{{ avaliacao.data }}</p>
+        </div>
+      </div>
+      <div class="avaliacao-estrelas">
+        <ng-container *ngFor="let estrela of estrelas">
+          <i class="fa" [ngClass]="{
+            'fa-star': estrela <= avaliacao.nota,
+            'fa-star-o': estrela > avaliacao.nota
+          }"></i>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
