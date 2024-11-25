@@ -1,0 +1,35 @@
+.menu {
+    background-color: #ffffff;
+    padding: 10px;
+    border: solid black 1px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    font-size: 18px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .menu ul li a.active {
+    border-bottom: 3px solid blue;
+  }
+  
