@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .form, .imagem {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+  }
+  
+  .pesquisa {
+    margin-bottom: 20px;
+  }
+  
+  .pesquisa input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .localizacao {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .localizacao select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .botao {
+    margin-bottom: 20px;
+    margin-left: 4%;
+  }
+  
+  .botao button {
+    background-color: #005A93;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .botao button:hover {
+    background-color: #004a76;
+  }
+  
+  .imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  
