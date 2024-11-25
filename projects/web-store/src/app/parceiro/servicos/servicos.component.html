@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="box" *ngFor="let produto of produtos">
+    <div class="item">
+      <div class="foto">
+        <img [src]="produto.foto" alt="Foto do Produto">
+      </div>
+      <div class="infos">
+        <h1>{{ produto.titulo }}</h1>
+        <span>{{ produto.status }}</span>
+        <p>{{ produto.key }}</p>
+      </div>
+      <div class="botoes">
+        <div class="botao-preco">
+          <h1>Por apenas</h1>
+          <button>R$ {{ produto.preco }}</button>
+        </div>
+        <div class="botao-agendar">
+          <button>Agendar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
