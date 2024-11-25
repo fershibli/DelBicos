@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="parceiro-card">
+    <div class="parceiro-imagem">
+      <img [src]="parceiro.fotoUrl" [alt]="parceiro.nome" class="foto-parceiro" />
+    </div>
+    <div class="parceiro-info">
+      <h2 class="parceiro-nome">{{ parceiro.nome }}</h2>
+      <p class="parceiro-categoria"><strong>Categoria:</strong> {{ parceiro.categoria }}</p>
+      <p class="parceiro-avaliacao">
+        <strong>Avaliação:</strong> {{ parceiro.avaliacao }} ({{ parceiro.numeroAvaliacoes }} avaliações)
+      </p>
+      <p class="parceiro-endereco"><strong>Endereço:</strong> {{ parceiro.endereco }}</p>
+  
+      <div class="parceiro-tags">
+        <span *ngFor="let tag of parceiro.tags" class="tag">{{ tag }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
