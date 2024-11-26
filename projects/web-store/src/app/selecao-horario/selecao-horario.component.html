@@ -1,0 +1,21 @@
+<app-header-logon></app-header-logon>
+<div class="box">
+<div class="direita">
+    <h1>Horários disponíveis</h1>
+    <app-horarios-free
+    [horarios]="horariosParceiro"
+    (horarioSelecionadoChange)="onHorarioSelecionado($event)">
+  </app-horarios-free>  
+  <div class="botao-continuar">
+    <button>Continuar</button>
+  </div>
+</div>
+<div class="esquerda">
+    <div *ngFor="let item of produtos">
+        <app-item [produto]="item"></app-item>
+    </div>
+    <app-calendario></app-calendario>
+</div>
+</div>
+
+
