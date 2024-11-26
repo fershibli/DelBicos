@@ -1,0 +1,58 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 250px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alterar {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.alterar button {
+    background-color: #005A93;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.alterar button:hover {
+    background-color: #004070;
+}
+
+.imagem img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.info, .info2, .valor {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.info h1 {
+    color: #333;
+    font-weight: 500;
+    font-size: 25px;
+}
+.valor h1 {
+    color: #333;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.valor h1 {
+    color: black;
+}

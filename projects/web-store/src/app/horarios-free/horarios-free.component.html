@@ -1,0 +1,9 @@
+<div class="horarios-container">
+    <button 
+      *ngFor="let horario of horariosDisponiveis"
+      [ngClass]="{'selected': horario === horarioSelecionado}"
+      (click)="selecionarHorario(horario)">
+      {{ horario }}
+    </button>
+  </div>
+  

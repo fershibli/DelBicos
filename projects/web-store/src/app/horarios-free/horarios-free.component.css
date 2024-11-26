@@ -1,0 +1,26 @@
+.horarios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    display: flex;
+  }
+  
+  button {
+    background-color: #005A93;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #004070;
+  }
+  
+  button.selected {
+    background-color: #FC8200;
+    color: white;
+  }
+  

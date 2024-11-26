@@ -1,0 +1,18 @@
+<div class="box">
+    <div class="alterar">
+        <button>Alterar</button>
+    </div>
+    <div class="imagem">
+        <img [src]="produto.imagem" [alt]="produto.titulo" />
+    </div>
+    <div class="info">
+        <h1>{{ produto.titulo }}</h1>
+        <p>{{ produto.parceiro }}</p>
+    </div>
+    <div class="info2">
+        <p>{{ produto.descricao }}</p>
+    </div>
+    <div class="valor">
+        <h1>R$ {{ produto.valor }}</h1>
+    </div>
+</div>
