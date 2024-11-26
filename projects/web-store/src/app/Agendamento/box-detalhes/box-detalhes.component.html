@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="box">
+        <div class="servico">
+            <img [src]="servico.imagem" alt="{{ servico.nome }}">
+            <h1>{{ servico.nome }}</h1>
+            <p>Serviço #{{ servico.id }}</p>
+            <p>Agendado em {{ servico.dataAgendamento }}</p>
+        </div>
+        <div class="detalhes">
+            <h1>Detalhes</h1>
+            <p><strong>Profissional:</strong> {{ servico.profissional }}</p>
+            <p><strong>Endereço:</strong> {{ servico.endereco }}</p>
+            <p><strong>Valor do serviço:</strong> R$ {{ servico.valor}}</p>
+            <p><strong>Método de pagamento:</strong> {{ servico.pagamento }}</p>
+            <p><strong>Dia agendado:</strong> {{ servico.diaAgendado }}</p>
+            <p><strong>Horário agendado:</strong> {{ servico.horarioAgendado }}</p>
+        </div>
+    </div>
+</div>
+<div class="botoes">
+    <button>Relatar um problema</button>
+    <button>Avaliar serviço</button>
+</div>

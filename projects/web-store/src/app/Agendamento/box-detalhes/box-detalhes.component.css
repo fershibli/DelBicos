@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.botoes{
+    padding-bottom: 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.servico {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.servico img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.detalhes {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.detalhes h1 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #333;
+}
+
+.detalles p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.botoes button {
+    background-color: #005A93;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: #FC8200;
+}

@@ -4,6 +4,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ServicesgridComponent } from '../servicesgrid/servicesgrid.component';
 import { FooterComponent } from "../footer/footer.component";
+import { MeusAgendamentosComponent } from "../pages/meus-agendamentos/meus-agendamentos.component";
 
 @Component({
   selector: 'app-main',
@@ -13,7 +14,8 @@ import { FooterComponent } from "../footer/footer.component";
     NavbarComponent,
     CarouselComponent,
     ServicesgridComponent,
-    FooterComponent
+    FooterComponent,
+    MeusAgendamentosComponent
 ],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
