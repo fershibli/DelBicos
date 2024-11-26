@@ -1,0 +1,24 @@
+<app-header-logon></app-header-logon>
+<div class="container">
+    <div class="valor">
+        <h1>Pague R${{ servico.preco }} para garantir seu horário!</h1>
+    </div>
+
+    <div class="info">
+        <h1>{{ servico.titulo }}</h1>
+        <p>Serviço: #{{ servico.id }}</p>
+        <p>Status: {{ servico.status }}</p>
+    </div>
+
+    <div class="qr">
+        <h1>Escaneie o QR Code para pagar</h1>
+        <img [src]="servico.qrcode" alt="QR Code">
+        <br>
+        <p>Ou copie este código para fazer o pagamento</p>
+        <label for="copia-e-cola">00020126540014br.gov.bcb.pi</label>
+        <button (click)="copiarCodigo()">Copiar</button>
+    </div>
+    <br>
+    <button>Ver em meus agendamentos </button>
+</div>
+<app-footer></app-footer>
