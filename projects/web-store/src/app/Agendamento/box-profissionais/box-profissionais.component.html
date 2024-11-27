@@ -1,1 +1,35 @@
-<p>box-profissionais works!</p>
+<div class="container">
+    <div class="esquerda">
+      <div class="info">
+        <div class="imagem">
+          <img [src]="profissional.foto" alt="{{ profissional.nome }}" />
+        </div>
+        <div class="nome">
+          <h1>{{ profissional.nome }}</h1>
+          <p>{{ profissional.categoria }}</p>
+          <p>{{ profissional.nota }} estrelas</p>
+        </div>
+      </div>
+  
+      <div class="endereco">
+        <span class="icon">📍</span> 
+        <p>{{ profissional.endereco }}</p>
+      </div>
+      <span>{{ profissional.servico }}</span>
+      <div class="servico">
+  
+        <div class="side1">
+          <p>Serviços a partir de R${{ profissional.precoMin }}</p>       
+        </div>
+        <div>
+          <button>Ver perfil</button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="direita">
+      <app-box-horarios-disponiveis></app-box-horarios-disponiveis>
+    </div>
+  </div>
+  
