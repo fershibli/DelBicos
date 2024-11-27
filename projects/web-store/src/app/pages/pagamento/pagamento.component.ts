@@ -16,7 +16,7 @@ export class PagamentoComponent {
     id: 12475,
     status: 'Aguardando pagamento',
     preco: 50.0,
-    qrcode: 'assets/qrcode.png', 
+    qrcode: 'https://pngimg.com/uploads/qr_code/qr_code_PNG10.png', 
     codigoPagamento: '00020126540014br.gov.bcb.pi'
   };
 
