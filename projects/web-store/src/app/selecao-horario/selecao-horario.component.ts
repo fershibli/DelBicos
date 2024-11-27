@@ -15,7 +15,7 @@ import { ItemComponent } from '../item/item.component';
 export class SelecaoHorarioComponent {
   produtos = [
     {
-      imagem: 'assets/services/04.png',
+      imagem: '04.png',
       titulo: 'Cílios fio-a-fio',
       parceiro: 'Sol Hammer',
       descricao: 'Aplicação com alta qualidade',

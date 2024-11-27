@@ -13,28 +13,28 @@ import { MenuComponent } from "../menu/menu.component";
 export class ServicosComponent {
   produtos = [
     {
-      foto: 'assets/services/01.png',
+      foto: 'https://nucleocursos.com.br/blog/wp-content/uploads/2022/08/Curso-de-Alongamento-de-Cilios-em-Blumenau-Nucleo-Cursos-1024x657-1-1.jpg',
       titulo: 'Aplicação de Cílios fio-a-fio',
       key: 'Aplicação',
       preco: 50.00,
       status: 'Horários disponíveis'
     },
     {
-      foto: 'assets/services/02.png',
+      foto: 'https://estudioshine.com.br/wp-content/uploads/2024/03/Volume-brasileiro-1.png',
       titulo: 'Volume Brasileiro',
       key: 'Aplicação',
       preco: 36.00,
       status: 'Horários disponíveis'
     },
     {
-      foto: 'assets/services/03.png',
+      foto: 'https://gmcilios.com.br/wp-content/uploads/2024/03/DESIGN-DE-SOBRANCELHA-2.jpg',
       titulo: 'Design de Sobrancelha',
       key: 'Aplicação',
       preco: 70.00,
       status: 'Horários disponíveis'
     },
     {
-      foto: 'assets/services/04.png',
+      foto: 'https://i.redd.it/a-new-press-on-nail-design-i-made-and-my-unedited-hand-this-v0-npl26rwz553a1.jpg?width=2274&format=pjpg&auto=webp&s=bfe2f74d9a0f98ff2ba4e357ffe85698d4a1ee40',
       titulo: 'Nail Design ',
       key: 'Aplicação',
       preco: 70.00,

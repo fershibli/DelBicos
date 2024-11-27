@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-horarios-free',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './horarios-free.component.html',
   styleUrl: './horarios-free.component.css'
 })

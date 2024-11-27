@@ -14,8 +14,8 @@
   border: 1px solid #005A93;
   border-radius: 8px;
   overflow: hidden;
-  width: 800px; /* Define um tamanho fixo para a largura */
-  height: 200px; /* Define um tamanho fixo para a altura */
+  width: 800px; 
+  height: 200px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
