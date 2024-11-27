@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { ItemComponent } from '../../item/item.component';
 import { FooterComponent } from '../../footer/footer.component';
 import { HeaderLogonComponent } from '../../header-logon/header-logon.component';
+import { BlueBarComponent } from '../../blue-bar/blue-bar.component';
 
 @Component({
   selector: 'app-confirma-data',
   standalone: true,
-  imports: [ CommonModule, ItemComponent, FooterComponent, HeaderLogonComponent],
+  imports: [ CommonModule, ItemComponent, FooterComponent, HeaderLogonComponent, BlueBarComponent],
   templateUrl: './confirma-data.component.html',
   styleUrl: './confirma-data.component.css'
 })
