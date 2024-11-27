@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { HeaderLogonComponent } from '../../header-logon/header-logon.component';
 import { FooterComponent } from '../../footer/footer.component';
+import { BlueBarComponent } from '../../blue-bar/blue-bar.component';
 
 @Component({
   selector: 'app-pagamento',
   standalone: true,
-  imports: [ CommonModule, HeaderLogonComponent, FooterComponent],
+  imports: [ CommonModule, HeaderLogonComponent, FooterComponent, BlueBarComponent],
   templateUrl: './pagamento.component.html',
   styleUrl: './pagamento.component.css'
 })
