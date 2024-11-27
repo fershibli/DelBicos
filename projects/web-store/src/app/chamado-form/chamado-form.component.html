@@ -1,0 +1,39 @@
+<div class="form-container">
+    <h2>Criar Chamado</h2>
+    <form (ngSubmit)="onSubmit(chamadoForm)" #chamadoForm="ngForm">
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input
+          id="titulo"
+          name="titulo"
+          type="text"
+          placeholder="Informe o título do chamado"
+          ngModel
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <textarea
+          id="descricao"
+          name="descricao"
+          placeholder="Descreva o problema"
+          ngModel
+          required
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="prioridade">Prioridade</label>
+        <select id="prioridade" name="prioridade" ngModel required>
+          <option value="baixa">Baixa</option>
+          <option value="media" selected>Média</option>
+          <option value="alta">Alta</option>
+        </select>
+      </div>
+  
+      <button type="submit" [disabled]="chamadoForm.invalid">Criar Chamado</button>
+    </form>
+  </div>
+  
