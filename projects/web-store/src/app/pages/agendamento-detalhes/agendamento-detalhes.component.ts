@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { BoxDetalhesComponent } from '../../Agendamento/box-detalhes/box-detalhes.component';
 import { HeaderLogonComponent } from '../../header-logon/header-logon.component';
 import { FooterComponent } from '../../footer/footer.component';
+import { BlueBarComponent } from "../../blue-bar/blue-bar.component";
 
 @Component({
   selector: 'app-agendamento-detalhes',
   standalone: true,
-  imports: [BoxDetalhesComponent, HeaderLogonComponent, FooterComponent],
+  imports: [BoxDetalhesComponent, HeaderLogonComponent, FooterComponent, BlueBarComponent],
   templateUrl: './agendamento-detalhes.component.html',
   styleUrl: './agendamento-detalhes.component.css'
 })
