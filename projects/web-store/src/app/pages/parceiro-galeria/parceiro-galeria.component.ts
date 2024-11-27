@@ -4,11 +4,12 @@ import { ParceiroComponent } from '../../parceiro/parceiro/parceiro.component';
 import { FooterComponent } from '../../footer/footer.component';
 import { MenuComponent } from '../../parceiro/menu/menu.component';
 import { GaleriaComponent } from '../../parceiro/galeria/galeria.component';
+import { BlueBarComponent } from '../../blue-bar/blue-bar.component';
 
 @Component({
   selector: 'app-parceiro-galeria',
   standalone: true,
-  imports: [HeaderLogonComponent, ParceiroComponent, FooterComponent, MenuComponent, GaleriaComponent],
+  imports: [HeaderLogonComponent, ParceiroComponent, FooterComponent, MenuComponent, GaleriaComponent, BlueBarComponent],
   templateUrl: './parceiro-galeria.component.html',
   styleUrl: './parceiro-galeria.component.css'
 })

@@ -4,11 +4,12 @@ import { FooterComponent } from '../../footer/footer.component';
 import { ParceiroComponent } from '../../parceiro/parceiro/parceiro.component';
 import { ServicosComponent } from '../../parceiro/servicos/servicos.component';
 import { MenuComponent } from "../../parceiro/menu/menu.component";
+import { BlueBarComponent } from '../../blue-bar/blue-bar.component';
 
 @Component({
   selector: 'app-parceiro-servicos',
   standalone: true,
-  imports: [HeaderLogonComponent, FooterComponent, ParceiroComponent, ServicosComponent, MenuComponent],
+  imports: [HeaderLogonComponent, FooterComponent, ParceiroComponent, ServicosComponent, MenuComponent, BlueBarComponent],
   templateUrl: './parceiro-servicos.component.html',
   styleUrl: './parceiro-servicos.component.css'
 })

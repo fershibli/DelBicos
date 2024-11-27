@@ -25,7 +25,8 @@
   }
   
   .menu ul li a:hover {
-    background-color: #555;
+    background-color: #FC8200;
+    color: white;
     border-radius: 5px;
   }
   

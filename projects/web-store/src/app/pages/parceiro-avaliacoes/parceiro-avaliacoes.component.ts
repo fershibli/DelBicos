@@ -4,11 +4,12 @@ import { FooterComponent } from '../../footer/footer.component';
 import { MenuComponent } from '../../parceiro/menu/menu.component';
 import { AvaliacoesComponent } from '../../parceiro/avaliacoes/avaliacoes.component';
 import { ParceiroComponent } from '../../parceiro/parceiro/parceiro.component';
+import { BlueBarComponent } from '../../blue-bar/blue-bar.component';
 
 @Component({
   selector: 'app-parceiro-avaliacoes',
   standalone: true,
-  imports: [ HeaderLogonComponent, FooterComponent, MenuComponent, AvaliacoesComponent, ParceiroComponent],
+  imports: [ HeaderLogonComponent, FooterComponent, MenuComponent, AvaliacoesComponent, ParceiroComponent, BlueBarComponent],
   templateUrl: './parceiro-avaliacoes.component.html',
   styleUrl: './parceiro-avaliacoes.component.css'
 })

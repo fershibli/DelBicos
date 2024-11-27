@@ -4,11 +4,12 @@ import { SobreComponent } from "../../parceiro/sobre/sobre.component";
 import { FooterComponent } from "../../footer/footer.component";
 import { MenuComponent } from '../../parceiro/menu/menu.component';
 import { ParceiroComponent } from '../../parceiro/parceiro/parceiro.component';
+import { BlueBarComponent } from '../../blue-bar/blue-bar.component';
 
 @Component({
   selector: 'app-parceiro-sobre',
   standalone: true,
-  imports: [HeaderLogonComponent, SobreComponent, FooterComponent, MenuComponent, ParceiroComponent],
+  imports: [HeaderLogonComponent, SobreComponent, FooterComponent, MenuComponent, ParceiroComponent, BlueBarComponent],
   templateUrl: './parceiro-sobre.component.html',
   styleUrl: './parceiro-sobre.component.css'
 })
