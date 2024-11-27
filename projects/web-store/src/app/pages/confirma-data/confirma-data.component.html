@@ -1,0 +1,43 @@
+<app-header-logon></app-header-logon>
+<div class="container">
+    <h1 class="titulo">Confirme as informações:</h1>
+    <div class="info">
+      <div class="produtos">
+        <div *ngFor="let item of produtos">
+          <app-item [produto]="item"></app-item>
+        </div>
+      </div>
+  
+      <div class="info2">
+        <div class="quando">
+          <h2>Agendamento para:</h2>
+          <p>{{ servico.data }}</p>
+        </div>
+  
+        <div class="horas">
+          <h2>Que horas?</h2>
+          <p>{{ servico.horas }}</p>
+        </div>
+  
+        <div class="local">
+          <h2>Onde?</h2>
+          <p>{{ servico.endereco }}</p>
+        </div>
+  
+        <div class="pagamento">
+          <h2>Método de pagamento</h2>
+          <select>
+            <option value="pix">Pix</option>
+            <option value="cartao_credito">Cartão de Crédito</option>
+            <option value="cartao_debito">Cartão de Débito</option>
+          </select>
+        </div>
+  
+        <div class="botao">
+          <button>Ir para o pagamento</button>
+        </div>
+      </div>
+    </div>
+</div>
+<app-footer></app-footer>
+  

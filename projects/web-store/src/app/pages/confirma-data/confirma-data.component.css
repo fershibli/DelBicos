@@ -1,0 +1,80 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 150px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .info2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info2 > div {
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    color: #005A93;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin: 0;
+    color: #555555;
+    font-size: 16px;
+  }
+  
+  .pagamento select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .botao {
+    text-align: center;
+  }
+  
+  .botao button {
+    background-color: #005A93;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao button:hover {
+    background-color: #FC8200;
+  }
+ 
