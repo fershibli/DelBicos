@@ -1,0 +1,18 @@
+.responsive-div {
+    background-color: #FFFFFF;  
+    max-height: 185px; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background-color: var(--delbicos-blue); 
+  }
+  
+  .responsive-div p {
+    font-size: 33px;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 12px
+    ;
+  }
