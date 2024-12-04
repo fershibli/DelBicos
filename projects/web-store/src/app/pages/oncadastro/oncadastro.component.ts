@@ -9,11 +9,13 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-oncadastro',
   standalone: true,
   imports: [
-    HeaderAloneComponent, FooterComponent, CadastroComponent, CommonModule, FormsModule
+    HeaderAloneComponent,
+    FooterComponent,
+    CadastroComponent,
+    CommonModule,
+    FormsModule,
   ],
   templateUrl: './oncadastro.component.html',
-  styleUrl: './oncadastro.component.css'
+  styleUrl: './oncadastro.component.css',
 })
-export class OncadastroComponent {
-
-}
+export class OncadastroComponent {}
