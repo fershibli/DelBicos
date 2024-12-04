@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;  
+    max-width: 1200px; 
+  }
+
+  /* Estilo para o retângulo */
+  .rectangle {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha os parágrafos na vertical */
+    gap: 15px; /* Espaço entre os parágrafos */
+    width: 100%;
+  }
+
+  /* Estilo para os botões */
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    margin-bottom: 10px; /* Espaçamento entre os botões quando empilhados */
+  }
+
+  .btn-analisar {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .btn-excluir {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .rectangle p {
+    text-align: left; 
+  }
+
+  .rectangle p:first-child {
+    font-weight: bold;
+  }
+  .content {
+    flex-grow: 1;           
+    overflow-y: auto;
+    height: 500px;  /* TODO: Arrumar p/ que ocupe o maximo da tela */     
+  }
+
+  .btn-pdf {
+    background-color: #dc3545;
+    color: white;
+  }
