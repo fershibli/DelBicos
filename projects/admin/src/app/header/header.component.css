@@ -1,0 +1,44 @@
+.titulo-site {
+  font-size: 40px;
+  font-weight: bold;
+  height: 112px;
+}
+
+.logo-delbicos {
+  height: 100px;
+}
+
+.icone-usuario {
+  width: 50px;
+  height: 50px;
+}
+
+.login-text {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.logged-in {
+  color: var(--delbicos-orange);
+  /* text-shadow: 1px 1px 1px var(--delbicos-black); */
+}
+
+.menu-usuario {
+  position: absolute;
+  top: 70px;
+  right: 32px;
+  width: fit-content !important;
+  z-index: 1;
+}
+
+.menu-usuario li {
+  color: var(--delbicos-blue);
+}
+
+.menu-usuario a {
+  color: var(--delbicos-orange);
+}
+
+.item-clicavel {
+  font-weight: bold;
+}

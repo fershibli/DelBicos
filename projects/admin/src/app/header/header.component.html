@@ -1,0 +1,12 @@
+<div class="d-flex flex-row align-items-center justify-content-between w-100 p-4">
+  <div class="titulo-site d-flex align-items-center">
+    <img class="logo-delbicos" src="assets/LogoHorizontal.png">
+  </div>
+  <div *ngIf="this.menuusuario" class="list-group menu-usuario">
+    <li class="list-group-item disabled">MENU</li>
+    <a href="#" class="list-group-item list-group-action item-clicavel" (click)="isLoggedIn ? mockLogout() : mockLogin()">
+      {{ isLoggedIn ? 'Logout' : 'Login' }}
+    </a>
+    <a href="#" class="list-group-item list-group-action item-clicavel">{{isLoggedIn ? 'Alternar para perfil Profissional' : 'Cadastre-se'}}</a>
+  </div>
+</div>
