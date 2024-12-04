@@ -1,4 +1,4 @@
-<app-header-logon></app-header-logon>
+
 <app-blue-bar [titulo]="'Pague R$ '+servico.preco+' para garantir seu horário!' "></app-blue-bar>
 <div class="container">
     <div class="info">
@@ -16,6 +16,5 @@
         <button (click)="copiarCodigo()">Copiar</button>
     </div>
     <br>
-    <button>Ver em meus agendamentos </button>
+    <button routerLink="/meus-agendamentos">Ver em meus agendamentos </button>
 </div>
-<app-footer></app-footer>
