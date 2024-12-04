@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
-  imports: [ CommonModule ],
+  imports: [CommonModule, RouterModule],
   templateUrl: './cadastro.component.html',
-  styleUrl: './cadastro.component.css'
+  styleUrl: './cadastro.component.css',
 })
-export class CadastroComponent  {
+export class CadastroComponent {
   cadastroForm: FormGroup;
   selectedOption: string = '';
 
@@ -40,4 +41,3 @@ export class CadastroComponent  {
     }
   }
 }
-
