@@ -6,10 +6,8 @@ import { BoxServicesComponent } from '../../Agendamento/box-services/box-service
 @Component({
   selector: 'app-meus-agendamentos',
   standalone: true,
-  imports: [ HeaderLogonComponent, FooterComponent, BoxServicesComponent ],
+  imports: [HeaderLogonComponent, FooterComponent, BoxServicesComponent],
   templateUrl: './meus-agendamentos.component.html',
-  styleUrl: './meus-agendamentos.component.css'
+  styleUrl: './meus-agendamentos.component.css',
 })
-export class MeusAgendamentosComponent {
-
-}
+export class MeusAgendamentosComponent {}
