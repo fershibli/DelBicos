@@ -1,7 +1,7 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -27,7 +27,7 @@
 .carousel-image-container {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 200px;
   width: 100%;
 }
 
