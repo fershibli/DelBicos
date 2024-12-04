@@ -1,0 +1,49 @@
+.navbar {
+    background-color: var(--delbicos-blue);
+    border-bottom: 1px solid gray;
+  }
+  
+  
+  .navbar-nav .nav-item .nav-link {
+    color: var(--delbicos-white);
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: var(--delbicos-orange);
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+    color: var(--delbicos-orange);
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item .nav-link.disabled {
+    color: #ccc;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .btn {
+    background-color: var(--delbicos-paleorange);
+    color: var(--delbicos-blue);
+    border: none;
+  }
+  
+  .btn:hover {
+    background-color: var(--delbicos-orange);
+    color: var(--delbicos-white);
+  }
+
+ .content {
+    flex-grow: 1;           
+    overflow-y: auto;
+    height: 500px;  /* TODO: Arrumar p/ que ocupe o maximo da tela */     
+  }
+  

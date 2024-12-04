@@ -1,0 +1,37 @@
+
+<nav class="navbar navbar-expand-lg w-100">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link" (click)="setVisiblePage(1)">Gerenciar Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="setVisiblePage(2)">Gerenciar Profissionais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="setVisiblePage(3)">Gerenciar Serviços e Estornos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <!-- Aqui você pode adicionar outros componentes ou páginas para exibição -->
+    <h1>Bem-vindo!</h1>
+    <div *ngIf="visiblePageNumber == 1">
+        Gerenciar Clientes
+        <app-clientes></app-clientes>
+    </div>
+    <div *ngIf="visiblePageNumber == 2">
+        Gerenciar Profissionais
+        <app-profissionais></app-profissionais>
+    </div>
+    <div *ngIf="visiblePageNumber == 3">
+        Gerenciar servicços e estornos
+        <app-servicos></app-servicos>
+    </div>
+  </div>
