@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-box-pesquisa',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './box-pesquisa.component.html',
-  styleUrl: './box-pesquisa.component.css'
+  styleUrl: './box-pesquisa.component.css',
 })
-export class BoxPesquisaComponent {
-
-}
+export class BoxPesquisaComponent {}
