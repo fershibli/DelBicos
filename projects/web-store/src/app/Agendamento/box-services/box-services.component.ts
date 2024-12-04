@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-box-services',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './box-services.component.html',
-  styleUrl: './box-services.component.css'
+  styleUrl: './box-services.component.css',
 })
 export class BoxServicesComponent implements OnInit {
   servico = {
@@ -16,10 +17,10 @@ export class BoxServicesComponent implements OnInit {
     dia: '06',
     mes: 'Dezembro',
     horario: '11h00',
-    imagem: 'assets/01.png',  
+    imagem: 'assets/01.png',
   };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 }

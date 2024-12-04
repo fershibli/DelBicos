@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CalendarioComponent } from '../calendario/calendario.component';
 import { EspecialidadeComponent } from '../especialidade/especialidade.component';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-filtro-primario',
@@ -9,11 +10,10 @@ import { CommonModule } from '@angular/common';
   imports: [
     CalendarioComponent,
     EspecialidadeComponent,
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   templateUrl: './filtro-primario.component.html',
-  styleUrl: './filtro-primario.component.css'
+  styleUrl: './filtro-primario.component.css',
 })
-export class FiltroPrimarioComponent {
-
-}
+export class FiltroPrimarioComponent {}
