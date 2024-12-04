@@ -18,7 +18,7 @@
     flex-direction: column;
     gap: 20px;
     width: 90%;  
-    max-width: 1200px; 
+    max-width: 100vw; 
   }
 
   .rectangle {
@@ -53,4 +53,14 @@
   .name {
     font-size: 18px;
     font-weight: bold;
+  }
+
+  .rowcard > :first-child {
+    width: 50%;
+  }
+  
+  .rowcard > :last-child {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
   }
