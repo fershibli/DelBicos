@@ -1,8 +1,12 @@
-<!-- <app-header></app-header>
-<app-navbar></app-navbar>
-<app-carousel></app-carousel>
-<app-servicesgrid></app-servicesgrid>
-<app-footer></app-footer> -->
 
-<app-meus-agendamentos></app-meus-agendamentos>
+<ng-container *ngIf="isLoggedIn; else loggedOut">
+  <app-header-logon></app-header-logon>
+</ng-container>
+<ng-template #loggedOut>
+  <app-header-logout></app-header-logout>
+</ng-template>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
 
