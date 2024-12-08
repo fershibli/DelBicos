@@ -1,4 +1,4 @@
-![Logo Delbicos](readme_images/DelBicos_LogoH.png)
+![Logo Delbicos](readme_images/DelBicos_git.png)
 
 # DelBicos - Delivery de Bicos
 
